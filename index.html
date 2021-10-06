@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - FCC: SurveyForm</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1 id="title">Form title</h1>
+    <p id="description">Short description</p>
+    <form id="survey-form">
+        <label id="name-label">
+    Name:
+    <input id="name" type="text" placeholder="full name" required>
+  </label>
+        <label id="email-label">
+    E-mail:
+    <input id="email" type="email" placeholder="your email" required>
+  </label>
+        <label id="number-label">
+    Rating (1-min, 10-max):
+    <input id="number" type="number" min=1 max=10 placeholder="1">
+  </label>
+        <label>
+    Options:
+  <select id="dropdown" type="dropdown">
+    <option>First</option>
+    <option>Second</option>
+  </select>
+  </label>
+        <label class="selection-group">
+    Select one:
+    <input type="radio" name="radio" value=1>1
+    <input type="radio" name="radio" value=2>2
+    <input type="radio" name="radio" value=3>3
+  </label>
+        <label class="selection-group">
+    Select all that apply:
+    <input type="checkbox" name="checkbox" value=1>A
+    <input type="checkbox" name="checkbox" value=2>B
+    <input type="checkbox" name="checkbox" value=3>C
+  </label>
+        <label>
+    <textarea placeholder="comments"></textarea>
+  </label>
+        <input id="submit" type="submit" value="Submit" class="mdc-button">
+    </form>
+</body>
+
+</html>
